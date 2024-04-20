@@ -41,8 +41,13 @@ document.addEventListener("DOMContentLoaded", function()
    let ftextInterval = setInterval(() => {
     switch(ftext) {
       case "coming soon": ftext = "coming soon."; break;
-      case "coming soon.": ftext = "coming soon.."; break;
-      case "coming soon..": ftext = "coming soon..."; break;
+      case "coming soon.": ftext = "ERROR 404"; break;
+      case "ERROR 404": ftext = "coming soon.."; break;
+      case "coming soon..": ftext = "HELP"; break;
+      case "HELP": ftext = "ERROR 4/26"; break;
+      case "ERROR 4/26": ftext = "c0m1ng s00n..."; break;
+      case "c0m1ng s00n...": ftext = "c0m1ng s00n........"; break;
+      case "c0m1ng s00n........": ftext = "010100110100111101010011"; break;
       default: ftext = "coming soon"; break;
     }
     ctx.fillStyle = "#FFFFFF";
