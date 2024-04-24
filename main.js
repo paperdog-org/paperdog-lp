@@ -40,15 +40,20 @@ document.addEventListener("DOMContentLoaded", function()
    let ftext = "coming soon"
    let ftextInterval = setInterval(() => {
     switch(ftext) {
-      case "coming soon": ftext = "coming soon."; break;
-      case "coming soon.": ftext = "ERROR 404"; break;
-      case "ERROR 404": ftext = "coming soon.."; break;
-      case "coming soon..": ftext = "HELP"; break;
-      case "HELP": ftext = "ERROR 4/26"; break;
-      case "ERROR 4/26": ftext = "c0m1ng s00n..."; break;
-      case "c0m1ng s00n...": ftext = "c0m1ng s00n........"; break;
-      case "c0m1ng s00n........": ftext = "010100110100111101010011"; break;
-      default: ftext = "coming soon"; break;
+      case "H": ftext = "HE"; break;
+      case "HE": ftext = "HEL"; break;
+      case "HEL": ftext = "HELL"; break;
+      case "HELL": ftext = "HELLO"; break;
+      case "HELLO": ftext = "HELLO,"; break;
+      case "HELLO,": ftext = "HELLO, W"; break;
+      case "HELLO, W": ftext = "HELLO, WO"; break;
+      case "HELLO, WO": ftext = "HELLO, WOR"; break;
+      case "HELLO, WOR": ftext = "HELLO, WORL"; break;
+      case "HELLO, WORL": ftext = "HELLO, WORLD"; break;
+      case "HELLO, WORLD": ftext = "HELLO, WORLD!"; break;
+      case "HELLO, WORLD!": ftext = "ARRIVAL 04262024........"; break;
+      case "ARRIVAL 04262024........": ftext = "00110010001100100011001100110010 "; break;
+      default: ftext = "H"; break;
     }
     ctx.fillStyle = "#FFFFFF";
     ctx.fillRect(0,0,canvas.width,canvas.height)
