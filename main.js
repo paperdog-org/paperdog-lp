@@ -45,14 +45,13 @@ document.addEventListener("DOMContentLoaded", function()
       case "HEL": ftext = "HELL"; break;
       case "HELL": ftext = "HELLO"; break;
       case "HELLO": ftext = "HELLO,"; break;
-      case "HELLO,": ftext = "HELLO, W"; break;
-      case "HELLO, W": ftext = "HELLO, WO"; break;
-      case "HELLO, WO": ftext = "HELLO, WOR"; break;
-      case "HELLO, WOR": ftext = "HELLO, WORL"; break;
-      case "HELLO, WORL": ftext = "HELLO, WORLD"; break;
-      case "HELLO, WORLD": ftext = "HELLO, WORLD!"; break;
-      case "HELLO, WORLD!": ftext = "ARRIVAL 04262024........"; break;
-      case "ARRIVAL 04262024........": ftext = "00110010001100100011001100110010 "; break;
+      case "HELLO,": ftext = "HELLO, H"; break;
+      case "HELLO, H": ftext = "HELLO, HO"; break;
+      case "HELLO, HO": ftext = "HELLO, HOP"; break;
+      case "HELLO, HOP": ftext = "HELLO, HOPE"; break;
+      case "HELLO, HOPE": ftext = "HELLO, HOPE"; break;
+      case "HELLO, HOPE": ftext = "HELLO, HOPE!"; break;
+      case "HELLO, HOPE!": ftext = "PROPAGATING"; break;
       default: ftext = "H"; break;
     }
     ctx.fillStyle = "#FFFFFF";
@@ -95,8 +94,8 @@ document.addEventListener("DOMContentLoaded", function()
 
   function animate()
   {
-    mesh.rotation.x +=0.007
-    mesh.rotation.y +=0.00033
+    mesh.rotation.x +=0.07
+    mesh.rotation.y +=0.000033
     requestAnimationFrame(animate)
     renderer.render(scene, camera)
   }
