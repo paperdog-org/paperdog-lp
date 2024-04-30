@@ -49,9 +49,14 @@ document.addEventListener("DOMContentLoaded", function()
       case "HELLO, H": ftext = "HELLO, HO"; break;
       case "HELLO, HO": ftext = "HELLO, HOP"; break;
       case "HELLO, HOP": ftext = "HELLO, HOPE"; break;
-      case "HELLO, HOPE": ftext = "HELLO, HOPE"; break;
-      case "HELLO, HOPE": ftext = "HELLO, HOPE!"; break;
-      case "HELLO, HOPE!": ftext = "PROPAGATING"; break;
+      case "HELLO, HOPE": ftext = ""; break;
+      case "": ftext = "HOPE"; break;
+      case "HOPE": ftext = "PROPAGATING"; break;
+      case "PROPAGATING": ftext = " HOPE "; break;
+      case " HOPE ": ftext = "PROPAGATING "; break;
+      case "PROPAGATING ": ftext = "  HOPE  "; break;
+      case "  HOPE  ": ftext = "PROPAGATING  "; break;
+      case "PROPAGATING  ": ftext = " "; break;
       default: ftext = "H"; break;
     }
     ctx.fillStyle = "#FFFFFF";
@@ -94,8 +99,8 @@ document.addEventListener("DOMContentLoaded", function()
 
   function animate()
   {
-    mesh.rotation.x +=0.07
-    mesh.rotation.y +=0.000033
+    mesh.rotation.x +=0.8
+    mesh.rotation.y +=0.000337
     requestAnimationFrame(animate)
     renderer.render(scene, camera)
   }
