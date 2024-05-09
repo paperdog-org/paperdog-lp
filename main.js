@@ -40,24 +40,10 @@ document.addEventListener("DOMContentLoaded", function()
    let ftext = "coming soon"
    let ftextInterval = setInterval(() => {
     switch(ftext) {
-      case "H": ftext = "HE"; break;
-      case "HE": ftext = "HEL"; break;
-      case "HEL": ftext = "HELL"; break;
-      case "HELL": ftext = "HELLO"; break;
-      case "HELLO": ftext = "HELLO,"; break;
-      case "HELLO,": ftext = "HELLO, H"; break;
-      case "HELLO, H": ftext = "HELLO, HO"; break;
-      case "HELLO, HO": ftext = "HELLO, HOP"; break;
-      case "HELLO, HOP": ftext = "HELLO, HOPE"; break;
-      case "HELLO, HOPE": ftext = ""; break;
-      case "": ftext = "HOPE"; break;
-      case "HOPE": ftext = "PROPAGATING"; break;
-      case "PROPAGATING": ftext = " HOPE "; break;
-      case " HOPE ": ftext = "PROPAGATING "; break;
-      case "PROPAGATING ": ftext = "  HOPE  "; break;
-      case "  HOPE  ": ftext = "PROPAGATING  "; break;
-      case "PROPAGATING  ": ftext = " "; break;
-      default: ftext = "H"; break;
+      case "": ftext = "Paper"; break;
+      case "Paper": ftext = " "; break;
+      case " ": ftext = "Dog"; break;
+      default: ftext = ""; break;
     }
     ctx.fillStyle = "#FFFFFF";
     ctx.fillRect(0,0,canvas.width,canvas.height)
@@ -99,7 +85,8 @@ document.addEventListener("DOMContentLoaded", function()
 
   function animate()
   {
-
+    mesh.rotation.x +=0.008
+    mesh.rotation.y +=13.37
     requestAnimationFrame(animate)
     renderer.render(scene, camera)
   }
