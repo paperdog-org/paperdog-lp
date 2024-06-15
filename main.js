@@ -80,13 +80,13 @@ document.addEventListener("DOMContentLoaded", function()
   scene.add(mesh)
   camera.position.set(0,0,7)
 
-  mesh.rotation.x = 1.5
-  mesh.rotation.y = 1.5
+  mesh.rotation.x = 0.03
+  mesh.rotation.y = 0.07
 
   function animate()
   {
     mesh.rotation.x +=0.008
-    mesh.rotation.y +=13.37
+    mesh.rotation.y +=0.007
     requestAnimationFrame(animate)
     renderer.render(scene, camera)
   }
